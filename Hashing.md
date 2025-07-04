@@ -10,6 +10,8 @@
   </li>
 </ul>
 
+<!-- Number Hashing -->
+<h1>Number Hashing</h1>
 <h2>Brute-Force Approach</h2>
 <ul>
   <li>
@@ -52,3 +54,40 @@
         O(1) time complexity, which is very efficient compared to the brute-force
         approach.
 </ul>
+
+<!-- Character Hashing -->
+<h1>Character Hashing</h1>
+<ul>
+  <li>Character Hashing is similar to Number Hashing, in number hashing, we were mapping the elements of input array to the indices of the hash array. So in the case of character hashing, we have to somehow associate the characters of the input string to an integer which can later be mapped to the indices of hash array.</li>
+  <li>
+    We can do this by using the ASCII values of the characters, which are unique
+    for each character. For example, the ASCII value of 'a' is 97, 'b' is 98,
+    and so on.
+  </li>
+  <li>There are three main cases that we must look into.</li>
+    <ul>
+      <li><b>Case 1: All characters of input string are in lowercase</b></li>
+      <ul>
+        <li>
+          In this case, we can just subtract the ASCII value of the character from the ASCII value of 'a' (97) to get the index of the hash array.
+          For example, for 'h', the index would be 104 - 97 = 7, so we would increment the value at index 7 of the hash array by 1 and so on for all characters.
+        </li>
+      </ul>
+      <li><b>Case 2: All characters of input string are in uppercase</b></li>
+       <ul>
+        <li>
+        When all the characters of the input string are in uppercase, we can subtract the ASCII value of the character from the ASCII value of 'A' (65) to get the index of the hash array.
+        </li>
+      </ul>
+      <li><b>Case 3: Mixed case characters in input string</b></li>
+      <ul>
+        <li>
+          In this case, we have a total of 256 characters, hence we can use the ASCII value of the character directly to get the index of the hash array. 
+          For example, for 'h', the index would be 104, so we would increment the value at index 104 of the hash array by 1 and so on for all characters.
+        </li>
+    </ul>
+</ul>
+</ul>
+<strong>
+  The third approach can be applied to the other two as well, making it generally the most optimal choice.
+</strong> 
