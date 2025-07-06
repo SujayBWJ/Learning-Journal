@@ -91,3 +91,11 @@
 <strong>
   The third approach can be applied to the other two as well, making it generally the most optimal choice.
 </strong> 
+<h2>What if number of queries exceed 10<sup>9</sup>?</h2>
+<ul>
+  <li>Hashing which we learned till now does relieve us from the brute-force method and does the job in a lesser time, but it does have an issue.</li>
+  <li>The issue is that we can't use the hashing we know to hash more than 10<sup>9</sup> queries. This is where the <b>Standard Template Library (STL) of C++ comes in.</b></li>
+  <li>We will use concepts called <i>Map</i> and <i>Unordered Map</i> to hash more than 10<sup>9</sup> queries.</li>
+
+
+</ul>
