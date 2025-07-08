@@ -198,3 +198,27 @@ Index : Value
   <li>To use complex keys like <code>pair&lt;int, int&gt;</code>, you must use <code>map</code> or write a custom hash.</li>
 </ul>
 
+<h1>Real-World Applications of Hashing</h1>
+
+<ul>
+  <li><b>🔐 Password Storage:</b> Hashes (like SHA-256, bcrypt) store passwords securely so raw passwords are never saved.</li>
+
+  <li><b>⚡ Fast Data Lookup:</b> Hash tables/maps enable O(1) access — used in Google Search, DNS, caching, etc.</li>
+
+  <li><b>🌐 Load Balancing:</b> Hashing helps route user requests to different servers evenly (e.g., Netflix, Amazon Prime).</li>
+
+  <li><b>🧩 Database Sharding:</b> Databases like MongoDB/Cassandra use hashing to split data across machines.</li>
+
+  <li><b>🧠 Caching:</b> Hash keys are used to store precomputed results (web pages, price lookups, etc.)</li>
+
+  <li><b>🧮 Compilers:</b> Hash tables manage variable/function lookups using symbol tables.</li>
+
+  <li><b>📦 File Integrity:</b> Hashing (e.g., MD5) verifies file correctness after downloads or backups.</li>
+
+  <li><b>🔍 Web Crawlers:</b> Hashes help detect duplicate web content (used by Googlebot, etc.).</li>
+
+  <li><b>📚 Data Structures:</b> HashMap, HashSet, Bloom filters, Merkle Trees (used in blockchain) all rely on hashing.</li>
+</ul>
+
+<p><b>In short:</b> Hashing powers almost every fast, secure, and scalable system in real-world computing.</p>
+
